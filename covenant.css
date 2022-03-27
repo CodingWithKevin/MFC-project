@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*body {
+    text-align: center;
+}*/
+
+
+/* the start of navigation bar and logo*/
+
+.top-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #2B3856;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    border-bottom: 4px solid lightblue;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 20px;
+    padding-right: 100px;
+    overflow-wrap: break-word;
+    margin-top: 27px;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 0 5px;
+    border-bottom: 3px solid transparent;
+}
+
+nav {
+    /*font-family: monospace;*/
+    float: right;
+    /*line-height: 50px;*/
+    padding-top: 27px;
+    padding-left: 30px;
+}
+
+nav a#active {
+    border-bottom: 4px solid lightblue;
+}
+
+nav a#subActive {
+    border-bottom: 2px dotted lightblue;
+}
+
+nav ul {
+    background: #2B3856;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li {
+    color: #fff;
+    background: #2B3856;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav li a {
+    color: #fff;
+    /*font-weight: bolder;*/
+}
+
+nav li a.nav-item:hover {
+    border-bottom: 4px solid lightblue;
+}
+
+nav ul.dropdown li a:hover {
+    cursor: pointer;
+    color: #2B3856;
+    font-weight: bolder;
+}
+
+nav ul li ul {
+    background: #2B3856;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 19rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+nav ul li:hover>ul,
+nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+}
+
+nav ul li ul li:hover {
+    background: #e3e3e3;
+}
+
+
+/* start of banner area */
+
+.banner-area img {
+    width: 1519px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0% 80%;
+}
+
+.cHeader p {
+    top: 180px;
+    left: 600px;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    letter-spacing: -4px;
+}
+
+
+/*end of banner area */
+
+
+/*start of grid-content */
+
+.content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "covenant covenantImage";
+    text-align: center;
+    padding-top: 30px;
+    background-color: white;
+    border-collapse: collapse;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.covenant #subTitle {
+    font-size: 30px;
+    font-weight: bold;
+    /*padding-left: 150px;*/
+    text-align: left;
+    padding-bottom: 70px;
+}
+
+.covenant {
+    grid-area: covenant;
+    text-align: left;
+    padding-left: 100px;
+    width: 800px;
+}
+
+.covenantImage {
+    padding-top: 90px;
+    padding-right: 80px;
+    grid-area: covenantImage;
+}
+
+.covenantImage img {
+    width: 500px;
+    height: 750px;
+}
+
+.covenant #message {
+    padding-top: 60px;
+    padding-right: 105px;
+    font-weight: bolder;
+    font-size: 25px;
+}
+
+ol.number {
+    list-style-type: number;
+    list-style-position: inside;
+    background: white;
+    color: black;
+    text-align: left;
+}
+
+ul.noStyle {
+    list-style-type: none;
+    text-indent: 40px;
+}
+
+ul.noStyle,
+.subTitleTwo,
+.spaceHeight {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+
+/*.spaceHeight {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.covenant .indent {
+    text-indent: 40px;
+}/*
+
+
+/*end of grid-content */
+
+
+/* the start of footer*/
+
+.footer {
+    background: grey;
+    color: white;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 50px;
+    font-size: 16px;
+}
+
+
+/* end of footer*/

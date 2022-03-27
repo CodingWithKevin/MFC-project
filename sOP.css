@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*body {
+    text-align: center;
+}*/
+
+
+/* the start of navigation bar and logo*/
+
+.top-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #2B3856;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    border-bottom: 4px solid lightblue;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 20px;
+    padding-right: 100px;
+    overflow-wrap: break-word;
+    margin-top: 27px;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 0 5px;
+    border-bottom: 3px solid transparent;
+}
+
+nav {
+    /*font-family: monospace;*/
+    float: right;
+    /*line-height: 50px;*/
+    padding-top: 27px;
+    padding-left: 30px;
+}
+
+nav a#active {
+    border-bottom: 4px solid lightblue;
+}
+
+nav a#subActive {
+    border-bottom: 2px dotted lightblue;
+}
+
+ul {
+    background: #2B3856;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    background: #2B3856;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: #fff;
+    /*font-weight: bolder;*/
+}
+
+li a.nav-item:hover {
+    border-bottom: 4px solid lightblue;
+}
+
+ul.dropdown li a:hover {
+    cursor: pointer;
+    color: #2B3856;
+    font-weight: bolder;
+}
+
+ul li ul {
+    background: #2B3856;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 19rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+}
+
+ul li ul li:hover {
+    background: #e3e3e3;
+}
+
+
+/* the end of navigation bar and logo*/
+
+
+/* the start of banner area */
+
+.banner-area img {
+    width: 1519px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0% 30%;
+}
+
+.sopHeader p {
+    top: 180px;
+    left: 370px;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    letter-spacing: -4px;
+}
+
+
+/* the end of banner area */
+
+
+/*start of content grid */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "sectionOne photoOne" "photoTwo sectionTwo";
+    text-align: center;
+    /*padding-top: 80px;*/
+    /*padding-bottom: 80px;*/
+    background-color: white;
+    border-collapse: collapse;
+    color: black;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin: 0px;
+}
+
+.sectionOne {
+    grid-area: sectionOne;
+    text-align: left;
+    height: 300px;
+    padding-top: 60px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.photoOne {
+    grid-area: photoOne;
+    height: 330px;
+}
+
+.photoOne img {
+    height: 330px;
+    width: 500px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.sectionTwo {
+    grid-area: sectionTwo;
+    text-align: left;
+    padding-top: 60px;
+    height: 330px;
+    padding-right: 10px;
+    padding-left: 10px;
+}
+
+.photoTwo {
+    grid-area: photoTwo;
+    height: 330px;
+}
+
+.photoTwo img {
+    height: 330px;
+    width: 500px;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.paragraph {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+footer {
+    background: grey;
+    color: white;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;
+    margin-top: 40px;
+    font-size: 16px;
+}

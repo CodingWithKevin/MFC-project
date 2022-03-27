@@ -1,0 +1,247 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*body {
+    text-align: center;
+}*/
+
+
+/* the start of navigation bar and logo*/
+
+.top-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #2B3856;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    border-bottom: 4px solid lightblue;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 20px;
+    padding-right: 100px;
+    overflow-wrap: break-word;
+    margin-top: 27px;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+
+ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 0 5px;
+    border-bottom: 3px solid transparent;
+}
+
+nav {
+    /*font-family: monospace;*/
+    float: right;
+    /*line-height: 50px;*/
+    padding-top: 27px;
+    padding-left: 30px;
+}
+
+nav a#active {
+    border-bottom: 4px solid lightblue;
+}
+
+nav a#subActive {
+    border-bottom: 2px dotted lightblue;
+}
+
+ul {
+    background: #2B3856;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+li {
+    color: #fff;
+    background: #2B3856;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+li a {
+    color: #fff;
+    /*font-weight: bolder;*/
+}
+
+li a.nav-item:hover {
+    border-bottom: 4px solid lightblue;
+}
+
+ul.dropdown li a:hover {
+    cursor: pointer;
+    color: #2B3856;
+    font-weight: bolder;
+}
+
+ul li ul {
+    background: #2B3856;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 19rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+ul li:hover>ul,
+ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+}
+
+ul li ul li:hover {
+    background: #e3e3e3;
+}
+
+
+/*start of banner area */
+
+.banner-area img {
+    width: 1519px;
+    height: 350px;
+    object-fit: cover;
+}
+
+.mVHeader p {
+    top: 180px;
+    left: 456px;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    letter-spacing: -4px;
+}
+
+
+/*end of banner area */
+
+
+/*start of content grid */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "vision visionImage" "missionImage mission";
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background-color: white;
+    border-collapse: collapse;
+    color: white;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content-grid h2 {
+    letter-spacing: 1px;
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+}
+
+.vision {
+    grid-area: vision;
+    color: black;
+    padding-top: 60px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+.visionImage {
+    grid-area: visionImage;
+}
+
+.visionImage img {
+    width: 440px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.missionImage {
+    grid-area: missionImage;
+}
+
+.missionImage img {
+    width: 440px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+.mission {
+    grid-area: mission;
+    color: black;
+    padding-top: 60px;
+    padding-right: 80px;
+    padding-left: 80px;
+}
+
+
+/*end of content grid */
+
+
+/* the start of content-area --> section 5*/
+
+.footer {
+    background: grey;
+    color: white;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+
+
+/* end of content area --> footer (section 5)*/

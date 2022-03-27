@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/*body {
+    text-align: center;
+}*/
+
+
+/* the start of navigation bar and logo*/
+
+.top-wrapper {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+header {
+    height: 100px;
+    background: #2B3856;
+    width: 100%;
+    z-index: 12;
+    position: fixed;
+    border-bottom: 4px solid lightblue;
+}
+
+.logo {
+    width: 30%;
+    float: left;
+    line-height: 20px;
+    padding-right: 100px;
+    overflow-wrap: break-word;
+    margin-top: 27px;
+    text-align: center;
+}
+
+.logo a {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-weight: bold;
+}
+
+.logo img {
+    height: 35px;
+    width: 35px;
+    float: left;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 2px;
+    font-size: 15px;
+    margin: 0 5px;
+    border-bottom: 3px solid transparent;
+}
+
+nav {
+    /*font-family: monospace;*/
+    float: right;
+    /*line-height: 50px;*/
+    padding-top: 27px;
+    padding-left: 30px;
+}
+
+nav a#active {
+    border-bottom: 4px solid lightblue;
+}
+
+nav a#subActive {
+    border-bottom: 2px dotted lightblue;
+}
+
+nav ul {
+    background: #2B3856;
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+nav li {
+    color: #fff;
+    background: #2B3856;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+nav li a {
+    color: #fff;
+    /*font-weight: bolder;*/
+}
+
+nav li a.nav-item:hover {
+    border-bottom: 4px solid lightblue;
+}
+
+nav ul.dropdown li a:hover {
+    cursor: pointer;
+    color: #2B3856;
+    font-weight: bolder;
+}
+
+nav ul li ul {
+    background: #2B3856;
+    visibility: hidden;
+    opacity: 0;
+    min-width: 19rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+}
+
+nav ul li:hover>ul,
+nav ul li ul:hover {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+nav ul li ul li {
+    clear: both;
+    width: 100%;
+    text-align: left;
+}
+
+nav ul li ul li:hover {
+    background: #e3e3e3;
+}
+
+
+/*start of banner area */
+
+.banner-area img {
+    width: 1519px;
+    height: 350px;
+    object-fit: cover;
+    object-position: 0% 65%;
+}
+
+.tOTHeader p {
+    top: 180px;
+    left: 456px;
+    font-size: 75px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    color: white;
+    letter-spacing: -4px;
+}
+
+
+/*end of banner area */
+
+
+/*start of content area */
+
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.firstSection,
+.secondSection,
+.thirdSection,
+.fourthSection,
+.fifthSection,
+.sixthSection,
+.seventhSection,
+.eighthSection,
+.ninthSection,
+.tenthSection {
+    padding-left: 300px;
+    padding-right: 300px;
+}
+
+.secPar,
+.secondSecTitle,
+.thirdSecTitle,
+.fourthSecTitle,
+.fifthSecTitle,
+.sixthSecTitle,
+.seventhSecTitle,
+.eighthSecTitle,
+.ninthSecTitle,
+.tenthSecTitle {
+    padding-top: 30px;
+}
+
+.aList {
+    list-style-type: circle;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.adjustment {
+    padding-top: 5px;
+    text-align: justify;
+}
+
+
+/*end of content area */
+
+
+/*start of footer */
+
+footer {
+    background: grey;
+    color: white;
+    height: 20px;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    bottom: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    clear: both;
+    margin-top: 40px;
+    font-size: 16px;
+}
+
+
+/* end of footer */
